@@ -44,7 +44,6 @@ iframe#tela{
 
 section#redes-sociais{
     text-align: right;
-    display: grid; /*Deixando os botões na vertical*/
 }
 
 section#redes-sociais img{
