@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        div.exemplo{
+            background-color: lightgray;
+            border-radius: 10px;
+            margin: auto;
+            padding: 10px;
+            margin: 10px;
+        }
+        div.container{
+            background-color: rgb(168, 234, 168);
+
+            display: flex;
+        }
+
+        div.item{
+            background-color: lightpink;
+            border: 1px solid purple;
+            text-align: center;
+            margin: 5px;
+
+            flex: auto;
+        }
+
+        div#ex1{
+            flex-flow: row nowrap;
+        }
+
+        div#ex2{
+            flex-flow: row wrap;
+        }
+
+        div#ex3{
+            flex-flow: row wrap-reverse;
+        }
+
+        div#ex4{
+            height: 180px;
+            flex-flow: column nowrap;
+        }
+
+        div#ex5{
+            height: 140px;
+            flex-flow: column wrap;
+        }
+
+        div#ex6{
+            height: 140px;
+            flex-flow: column wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="exemplo">
+        <p>Flex-direction: row<br>Flex-wrap: nowrap</p>
+        <div class="container" id="ex1">
+            <div class="item">Exemplo de bloco A</div>
+            <div class="item">Exemplo de bloco B</div>
+            <div class="item">Exemplo de bloco C</div>
+            <div class="item">Exemplo de bloco D</div>
+            <div class="item">Exemplo de bloco E</div>
+            <div class="item">Exemplo de bloco F</div>
+        </div>
+    </div>
+
+    <div class="exemplo">
+        <p>Flex-direction: row<br>Flex-wrap: wrap</p>
+        <div class="container" id="ex2">
+            <div class="item">Exemplo de bloco A</div>
+            <div class="item">Exemplo de bloco B</div>
+            <div class="item">Exemplo de bloco C</div>
+            <div class="item">Exemplo de bloco D</div>
+            <div class="item">Exemplo de bloco E</div>
+            <div class="item">Exemplo de bloco F</div>
+        </div>
+    </div>
+
+    <div class="exemplo">
+        <p>Flex-direction: row<br>Flex-wrap: wrap-reverse</p>
+        <div class="container" id="ex3">
+            <div class="item">Exemplo de bloco A</div>
+            <div class="item">Exemplo de bloco B</div>
+            <div class="item">Exemplo de bloco C</div>
+            <div class="item">Exemplo de bloco D</div>
+            <div class="item">Exemplo de bloco E</div>
+            <div class="item">Exemplo de bloco F</div>
+        </div>
+    </div>
+
+    <div class="exemplo">
+        <p>Flex-direction: column<br>Flex-wrap: nowrap</p>
+        <div class="container" id="ex4">
+            <div class="item">Exemplo de bloco A</div>
+            <div class="item">Exemplo de bloco B</div>
+            <div class="item">Exemplo de bloco C</div>
+            <div class="item">Exemplo de bloco D</div>
+            <div class="item">Exemplo de bloco E</div>
+            <div class="item">Exemplo de bloco F</div>
+        </div>
+    </div>
+
+    <div class="exemplo">
+        <p>Flex-direction: column<br>Flex-wrap: wrap</p>
+        <div class="container" id="ex5">
+            <div class="item">Exemplo de bloco A</div>
+            <div class="item">Exemplo de bloco B</div>
+            <div class="item">Exemplo de bloco C</div>
+            <div class="item">Exemplo de bloco D</div>
+            <div class="item">Exemplo de bloco E</div>
+            <div class="item">Exemplo de bloco F</div>
+        </div>
+    </div>
+
+    <div class="exemplo">
+        <p>Flex-direction: column<br>Flex-wrap: wrap-reverse</p>
+        <div class="container" id="ex6">
+            <div class="item">Exemplo de bloco A</div>
+            <div class="item">Exemplo de bloco B</div>
+            <div class="item">Exemplo de bloco C</div>
+            <div class="item">Exemplo de bloco D</div>
+            <div class="item">Exemplo de bloco E</div>
+            <div class="item">Exemplo de bloco F</div>
+        </div>
+    </div>
+</body>
+</html>
