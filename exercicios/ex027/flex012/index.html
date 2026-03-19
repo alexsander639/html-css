@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        div.container{
+            background-color: rgb(168, 234, 168);
+            margin: 5px;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: lightpink;
+            border: 1px solid purple;
+            text-align: center;
+            margin: 5px;
+        }
+
+        /*-----Shorthand do flex-----
+            básico:
+                flex: flex-grow + flex-shrink + flex-basis
+
+            muito utilizado:
+                flex: 0 1 auto
+                flex: initial
+            
+            nada flexível:
+                flex: 0 0 auto
+                flex: none
+
+            super flexível:
+                flex: 1 1 auto
+                flex: auto
+
+            só alterar o grow: (no lugar do 3 pode ser qualquer valor)
+                flex: 3 1 auto
+                flex: 3
+        */
+
+        div#primeiro{
+            /*flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 200px;*/
+
+            flex: 0 1 200px;
+        }
+
+        div#segundo{
+            /*flex-grow: 2;
+            flex-shrink: 0;
+            flex-basis: 200px;*/
+
+            flex: 2 0 300px;
+        }
+
+        div#terceiro{
+            /*flex-grow: 1;
+            flex-shrink: 2;
+            flex-basis: 200px;*/
+
+            flex: 1 2 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="primeiro">A</div>
+        <div class="item" id="segundo">B</div>
+        <div class="item" id="terceiro">C</div>
+    </div>
+</body>
+</html>
