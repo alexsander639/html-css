@@ -4,12 +4,18 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     line-height: 2em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .container{
+    width: 100vw;
+    height: 100vh;
     display: grid;
-    grid-template-rows: 100px 60px 600px 60px;
+    grid-template-rows: 100px 60px 1fr 60px;
     grid-template-columns: 3fr 1fr;
+    gap: 5px;
 }
 
 #topo{
